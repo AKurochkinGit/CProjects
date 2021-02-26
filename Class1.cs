@@ -26,7 +26,7 @@ namespace FractionCSharp
             }
             _x = x;
             _y = y;
-            if(_x < 0 && _y < 0)
+            if (_x < 0 && _y < 0)
             {
                 _x = -_x;
                 _y = -_y;
@@ -39,16 +39,16 @@ namespace FractionCSharp
             return _x;
 
         }
-         
+
         public void SetX(long x)
         {
             _x = x;
-            if(_x < 0 && _y < 0)
+            if (_x < 0 && _y < 0)
             {
                 _x = -_x;
                 _y = -_y;
             }
-            
+
         }
 
         public long GetY()
@@ -69,12 +69,12 @@ namespace FractionCSharp
                 Console.WriteLine("No divide by zero");
             }
             _y = y;
-            if(_x < 0 && _y < 0)
+            if (_x < 0 && _y < 0)
             {
                 _x = -_x;
                 _y = -_y;
             }
-            
+
         }
 
         public void simplify()
@@ -120,7 +120,7 @@ namespace FractionCSharp
         {
             Fraction res = new Fraction();
             res.SetX(d1._x * d2._x);
-            res.SetY( d1._y * d2._y);
+            res.SetY(d1._y * d2._y);
             res.simplify();
             return res;
         }
@@ -154,7 +154,7 @@ namespace FractionCSharp
             return (d1.value() != d2.value());
         }
 
-       
+
         public static bool operator >(Fraction d1, Fraction d2)
         {
             return (d1.value() > d2.value());
@@ -181,6 +181,20 @@ namespace FractionCSharp
             Console.Write("/{0}", this.GetY());
             Console.WriteLine(" or {0}", this.value());
 
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                throw new NullReferenceException();
+            if (!(obj is Fraction))
+                throw new ArgumentException
+                ("Argument should be Fraction type");
+            return (_x == (obj as Fraction)._x && _y == (obj as Fraction)._y);
+        }
+
+        public override int GetHashCode()
+        {
+            return _x.GetHashCode();
         }
     }
 }
