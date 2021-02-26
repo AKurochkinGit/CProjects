@@ -14,19 +14,40 @@ namespace FractionCSharp
 
         public Fraction(long x, long y)
         {
-            this.SetX(x);
-            this.SetY(y);
+            try
+            {
+                if (y == 0)
+                    throw new DivideByZeroException();
+            }
+            catch (DivideByZeroException)
+            {
+
+                Console.WriteLine("No divide by zero");
+            }
+            _x = x;
+            _y = y;
+            if(_x < 0 && _y < 0)
+            {
+                _x = -_x;
+                _y = -_y;
+            }
             this.simplify();
         }
 
         public long GetX()
         {
             return _x;
+
         }
          
         public void SetX(long x)
         {
             _x = x;
+            if(_x < 0 && _y < 0)
+            {
+                _x = -_x;
+                _y = -_y;
+            }
             
         }
 
@@ -48,6 +69,11 @@ namespace FractionCSharp
                 Console.WriteLine("No divide by zero");
             }
             _y = y;
+            if(_x < 0 && _y < 0)
+            {
+                _x = -_x;
+                _y = -_y;
+            }
             
         }
 
