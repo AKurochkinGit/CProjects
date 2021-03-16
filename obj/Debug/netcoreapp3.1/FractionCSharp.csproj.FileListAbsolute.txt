@@ -1,0 +1,13 @@
+C:\Users\avkur\source\repos\FractionCSharp\bin\Debug\netcoreapp3.1\FractionCSharp.exe
+C:\Users\avkur\source\repos\FractionCSharp\bin\Debug\netcoreapp3.1\FractionCSharp.deps.json
+C:\Users\avkur\source\repos\FractionCSharp\bin\Debug\netcoreapp3.1\FractionCSharp.runtimeconfig.json
+C:\Users\avkur\source\repos\FractionCSharp\bin\Debug\netcoreapp3.1\FractionCSharp.runtimeconfig.dev.json
+C:\Users\avkur\source\repos\FractionCSharp\bin\Debug\netcoreapp3.1\FractionCSharp.dll
+C:\Users\avkur\source\repos\FractionCSharp\bin\Debug\netcoreapp3.1\FractionCSharp.pdb
+C:\Users\avkur\source\repos\FractionCSharp\obj\Debug\netcoreapp3.1\FractionCSharp.csprojAssemblyReference.cache
+C:\Users\avkur\source\repos\FractionCSharp\obj\Debug\netcoreapp3.1\FractionCSharp.AssemblyInfoInputs.cache
+C:\Users\avkur\source\repos\FractionCSharp\obj\Debug\netcoreapp3.1\FractionCSharp.AssemblyInfo.cs
+C:\Users\avkur\source\repos\FractionCSharp\obj\Debug\netcoreapp3.1\FractionCSharp.csproj.CoreCompileInputs.cache
+C:\Users\avkur\source\repos\FractionCSharp\obj\Debug\netcoreapp3.1\FractionCSharp.dll
+C:\Users\avkur\source\repos\FractionCSharp\obj\Debug\netcoreapp3.1\FractionCSharp.pdb
+C:\Users\avkur\source\repos\FractionCSharp\obj\Debug\netcoreapp3.1\FractionCSharp.genruntimeconfig.cache
