@@ -9,9 +9,9 @@ namespace Papa_Mama
     class Message
     {
         public static int n_rep;
-        private static int delay;
-        private static int repeat;
-        private static string value;
+        private  int delay;
+        private  int repeat;
+        private  string value;
         public static object l = new object();
         public Message(string _value, int _repeat, int _delay)
         {  
@@ -30,8 +30,10 @@ namespace Papa_Mama
                     Console.WriteLine(value);
                     n_rep--;
                     i++;
-                    Thread.Sleep(delay);
                 }
+                    Thread.Sleep(delay);
+                
+                
 
             }
            

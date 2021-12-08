@@ -34,10 +34,9 @@
             // 
             // buttonSAR
             // 
-            this.buttonSAR.Location = new System.Drawing.Point(18, 72);
-            this.buttonSAR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonSAR.Location = new System.Drawing.Point(12, 47);
             this.buttonSAR.Name = "buttonSAR";
-            this.buttonSAR.Size = new System.Drawing.Size(91, 50);
+            this.buttonSAR.Size = new System.Drawing.Size(26, 100);
             this.buttonSAR.TabIndex = 0;
             this.buttonSAR.Text = "ЮАР";
             this.buttonSAR.UseVisualStyleBackColor = true;
@@ -45,10 +44,9 @@
             // 
             // buttonPakistan
             // 
-            this.buttonPakistan.Location = new System.Drawing.Point(18, 144);
-            this.buttonPakistan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonPakistan.Location = new System.Drawing.Point(12, 153);
             this.buttonPakistan.Name = "buttonPakistan";
-            this.buttonPakistan.Size = new System.Drawing.Size(100, 65);
+            this.buttonPakistan.Size = new System.Drawing.Size(26, 100);
             this.buttonPakistan.TabIndex = 1;
             this.buttonPakistan.Text = "Пакистан";
             this.buttonPakistan.UseVisualStyleBackColor = true;
@@ -56,13 +54,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonPakistan);
             this.Controls.Add(this.buttonSAR);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(22, 424);
+            this.MinimumSize = new System.Drawing.Size(0, 295);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

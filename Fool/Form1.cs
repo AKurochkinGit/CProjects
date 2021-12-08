@@ -12,7 +12,7 @@ using System.Media;
 namespace Fool
 {
 
-    enum cursor { DownLeft, Left, UpLeft, Up, UpRight, Right, DownRight, Down};
+    enum cursor { DownLeft, Left, UpLeft, Up, UpRight, Right, DownRight, Down };
     public partial class Form1 : Form
     {
         int CursorX = MousePosition.X;
@@ -24,7 +24,7 @@ namespace Fool
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            ClientSize = new Size(620,410);
+            ClientSize = new Size(620, 410);
             SoundPlayer sp = new SoundPlayer(@"C:\music\Durak.wav");
             sp.PlayLooping();
         }
@@ -52,7 +52,7 @@ namespace Fool
             int x = MousePosition.X - this.Location.X;
             int y = MousePosition.Y - this.Location.Y;
             if (ShortDistance(buttonNo))
-            {      
+            {
                 buttonNo.Location = new Point(buttonNo.Location.X + x - CursorX, buttonNo.Location.Y + y - CursorY);
                 if (CloseToBorder(buttonNo))
                 {
@@ -65,18 +65,18 @@ namespace Fool
 
 
 
-       
+
 
         private bool ShortDistance(Button But)
         {
             int X = MousePosition.X - this.Location.X;
             int Y = MousePosition.Y - this.Location.Y;
-                return Math.Abs(But.Location.X - X) < 100 && Math.Abs(But.Location.Y - Y) < 100;
+            return Math.Abs(But.Location.X - X) < 100 && Math.Abs(But.Location.Y - Y) < 100;
         }
 
         private bool CloseToBorder(Button But)
         {
-                return buttonNo.Location.X > 610 || buttonNo.Location.Y > 400 || buttonNo.Location.Y < -10 || buttonNo.Location.X < -30;
+            return buttonNo.Location.X > 610 || buttonNo.Location.Y > 400 || buttonNo.Location.Y < -10 || buttonNo.Location.X < -30;
         }
 
 

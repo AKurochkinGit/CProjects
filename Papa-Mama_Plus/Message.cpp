@@ -15,17 +15,17 @@ Message::Message(std::string _value, int _repeat, int _delay)
 
 void Message::ToSay()
 {
-    mtx.lock();
+   
     int i = 0;
     while (i < repeat && n_rep > 0)
-    {
-        std::cout << value << '\n';
-        n_rep--;
-        i++;
-        mtx.unlock();
-        std::this_thread::sleep_for(std::chrono::milliseconds{ delay });
+    { 
         mtx.lock();
-     
+        std::cout << value << '\n';
+        n_rep--; 
+        mtx.unlock();
+        i++;
+       
+        std::this_thread::sleep_for(std::chrono::milliseconds{ delay });
+      
     }
-    mtx.unlock();
 }
